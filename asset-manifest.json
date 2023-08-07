@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/kirbyTodoList/static/css/main.b42cd037.css",
-    "main.js": "/kirbyTodoList/static/js/main.6627468a.js",
+    "main.js": "/kirbyTodoList/static/js/main.f4580f24.js",
     "static/js/787.b9578de5.chunk.js": "/kirbyTodoList/static/js/787.b9578de5.chunk.js",
     "static/media/chk_bg.png": "/kirbyTodoList/static/media/chk_bg.2d5424aa51613eea3d90.png",
     "static/media/tit.jpg": "/kirbyTodoList/static/media/tit.de8bc917cb76e42e710a.jpg",
     "index.html": "/kirbyTodoList/index.html",
     "main.b42cd037.css.map": "/kirbyTodoList/static/css/main.b42cd037.css.map",
-    "main.6627468a.js.map": "/kirbyTodoList/static/js/main.6627468a.js.map",
+    "main.f4580f24.js.map": "/kirbyTodoList/static/js/main.f4580f24.js.map",
     "787.b9578de5.chunk.js.map": "/kirbyTodoList/static/js/787.b9578de5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b42cd037.css",
-    "static/js/main.6627468a.js"
+    "static/js/main.f4580f24.js"
   ]
 }
