@@ -34,7 +34,7 @@ const ChocoMain = () => {
                         type="text"
                         value={editValue}
                         onChange={editing}
-                        onKeyDown={editKeyDown}
+                        onKeyUp={editKey}
                     />
                     ) : (
                         <strong onClick={() => {goDone(idx)}}>{e}</strong>
@@ -80,7 +80,7 @@ const ChocoMain = () => {
     };
 
     //todo 수정 input 작성 후 'Enter'키로 등록
-    const editKeyDown = (event) => {
+    const editKey = (event) => {
         if (event.key === 'Enter') {
             setTodoData((prev) => {
                 const updatedTodoData = [...prev];
@@ -140,18 +140,20 @@ const ChocoMain = () => {
         }
     }
 
+    //todo 등록 input 작성 후 'Enter'키로 등록
+    const addKey = (event) => {
+        event.preventDefault(); // 폼 제출 기본 동작 막기
+        if (event.key === 'Enter') {
+            console.log('엔터키로 추가')
+            addTodo();
+        }
+    };
+
     //todo 추가 상태 업데이트
     const addInputChange = (event) => {
         const value = event.target.value;
         console.log(value); // 입력 값 확인
         setInputValue(value); // 상태 업데이트
-    };
-
-    //todo 등록 input 작성 후 'Enter'키로 등록
-    const addKeyDown = (event) => {
-        if (event.key === 'Enter') {
-          addTodo();
-        }
     };
 
     //todo list 삭제
@@ -199,7 +201,7 @@ const ChocoMain = () => {
                     <img src={todoTitle} alt="todo 타이틀"/>
                         <div className='todo_list'>
                             <form onSubmit={(e) => e.preventDefault()}>
-                                <input ref={addInput} className="add_box" type="text" onChange={addInputChange} onKeyDown={addKeyDown}/>
+                                <input ref={addInput} className="add_box" type="text" onChange={addInputChange} onKeyUp={addKey}/>
                                 <button type="button" onClick={addTodo}>Add</button>
                             </form>
                             <ul>
