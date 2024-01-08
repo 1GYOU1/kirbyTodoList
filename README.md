@@ -4,7 +4,8 @@ React.js로 kirby 테마 TodoList 구현하기
 
 ### ✨ MainPage View
 
-![화면-캡처-2023-08-09-100931_03_02](https://github.com/chocochocochococho/todoList-react/assets/139747168/a9d9cfb9-b040-433e-90ad-6426cbed6a1d)
+![---ezgif com-speed](https://github.com/1GYOU1/kirbyTodoList/assets/90018379/082484bc-1ddb-4381-a9b1-606b66fd4bae)
+
 
 ### 📌 주요 기술 스택
 
